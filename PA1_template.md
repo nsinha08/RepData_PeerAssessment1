@@ -25,6 +25,7 @@ file <- "activity.csv"
 if (!file.exists(file)) {
   unzip(zipfile = "activity.zip")
 }
+
 activity_dta <- read.csv(file, header = TRUE)
 
 ```
