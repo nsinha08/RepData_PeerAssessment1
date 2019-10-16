@@ -1,0 +1,2868 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="PA1_template.fld/filelist.xml">
+<link rel=Edit-Time-Data href="PA1_template.fld/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Reproducible Research: Peer Assessment 1</title>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="PA1_template.fld/themedata.thmx">
+<link rel=colorSchemeMapping href="PA1_template.fld/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2010TableStyleRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef m:val="off"/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapRight/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="subSup"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="377">
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Bibliography"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Link"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Link Error"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536859905 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	mso-font-kerning:0pt;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+h4
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+h5
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:normal;
+	font-style:italic;}
+h6
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:normal;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-link:"Caption Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.MsoFootnoteReference
+	{mso-style-unhide:no;
+	mso-style-parent:"Caption Char";
+	vertical-align:super;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:24.0pt;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:9.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Title;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:12.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	font-weight:bold;}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-parent:"Body Text";
+	mso-style-next:"Body Text";
+	margin-top:5.0pt;
+	margin-right:0in;
+	margin-bottom:5.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-bidi-font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"Caption Char";
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoBibliography, li.MsoBibliography, div.MsoBibliography
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{mso-style-priority:39;
+	mso-style-qformat:yes;
+	mso-style-parent:"Heading 1";
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+p.FirstParagraph, li.FirstParagraph, div.FirstParagraph
+	{mso-style-name:"First Paragraph";
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"Body Text";
+	mso-style-next:"Body Text";
+	margin-top:9.0pt;
+	margin-right:0in;
+	margin-bottom:9.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.Compact, li.Compact, div.Compact
+	{mso-style-name:Compact;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"Body Text";
+	margin-top:1.8pt;
+	margin-right:0in;
+	margin-bottom:1.8pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.Author, li.Author, div.Author
+	{mso-style-name:Author;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	text-align:center;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.Abstract, li.Abstract, div.Abstract
+	{mso-style-name:Abstract;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Body Text";
+	margin-top:15.0pt;
+	margin-right:0in;
+	margin-bottom:15.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.DefinitionTerm, li.DefinitionTerm, div.DefinitionTerm
+	{mso-style-name:"Definition Term";
+	mso-style-unhide:no;
+	mso-style-next:Definition;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Definition, li.Definition, div.Definition
+	{mso-style-name:Definition;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.TableCaption, li.TableCaption, div.TableCaption
+	{mso-style-name:"Table Caption";
+	mso-style-unhide:no;
+	mso-style-parent:Caption;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.ImageCaption, li.ImageCaption, div.ImageCaption
+	{mso-style-name:"Image Caption";
+	mso-style-unhide:no;
+	mso-style-parent:Caption;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Figure, li.Figure, div.Figure
+	{mso-style-name:Figure;
+	mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.FigurewithCaption, li.FigurewithCaption, div.FigurewithCaption
+	{mso-style-name:"Figure with Caption";
+	mso-style-unhide:no;
+	mso-style-parent:Figure;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.CaptionChar
+	{mso-style-name:"Caption Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Caption;}
+span.VerbatimChar
+	{mso-style-name:"Verbatim Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Caption Char";
+	mso-style-link:"Source Code";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;}
+p.SourceCode, li.SourceCode, div.SourceCode
+	{mso-style-name:"Source Code";
+	mso-style-unhide:no;
+	mso-style-link:"Verbatim Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	background:#F8F8F8;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.KeywordTok
+	{mso-style-name:KeywordTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#204A87;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.DataTypeTok
+	{mso-style-name:DataTypeTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#204A87;
+	background:#F8F8F8;}
+span.DecValTok
+	{mso-style-name:DecValTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#0000CF;
+	background:#F8F8F8;}
+span.BaseNTok
+	{mso-style-name:BaseNTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#0000CF;
+	background:#F8F8F8;}
+span.FloatTok
+	{mso-style-name:FloatTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#0000CF;
+	background:#F8F8F8;}
+span.ConstantTok
+	{mso-style-name:ConstantTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:black;
+	background:#F8F8F8;}
+span.CharTok
+	{mso-style-name:CharTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#4E9A06;
+	background:#F8F8F8;}
+span.SpecialCharTok
+	{mso-style-name:SpecialCharTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:black;
+	background:#F8F8F8;}
+span.StringTok
+	{mso-style-name:StringTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#4E9A06;
+	background:#F8F8F8;}
+span.VerbatimStringTok
+	{mso-style-name:VerbatimStringTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#4E9A06;
+	background:#F8F8F8;}
+span.SpecialStringTok
+	{mso-style-name:SpecialStringTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#4E9A06;
+	background:#F8F8F8;}
+span.ImportTok
+	{mso-style-name:ImportTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+span.CommentTok
+	{mso-style-name:CommentTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.DocumentationTok
+	{mso-style-name:DocumentationTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.AnnotationTok
+	{mso-style-name:AnnotationTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.CommentVarTok
+	{mso-style-name:CommentVarTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.OtherTok
+	{mso-style-name:OtherTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;}
+span.FunctionTok
+	{mso-style-name:FunctionTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:black;
+	background:#F8F8F8;}
+span.VariableTok
+	{mso-style-name:VariableTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:black;
+	background:#F8F8F8;}
+span.ControlFlowTok
+	{mso-style-name:ControlFlowTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#204A87;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.OperatorTok
+	{mso-style-name:OperatorTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#CE5C00;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.BuiltInTok
+	{mso-style-name:BuiltInTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+span.ExtensionTok
+	{mso-style-name:ExtensionTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+span.PreprocessorTok
+	{mso-style-name:PreprocessorTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.AttributeTok
+	{mso-style-name:AttributeTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#C4A000;
+	background:#F8F8F8;}
+span.RegionMarkerTok
+	{mso-style-name:RegionMarkerTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+span.InformationTok
+	{mso-style-name:InformationTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.WarningTok
+	{mso-style-name:WarningTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#8F5902;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.AlertTok
+	{mso-style-name:AlertTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#EF2929;
+	background:#F8F8F8;}
+span.ErrorTok
+	{mso-style-name:ErrorTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	color:#A40000;
+	background:#F8F8F8;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+span.NormalTok
+	{mso-style-name:NormalTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	background:#F8F8F8;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("PA1_template.fld/header.html") fs;
+	mso-footnote-continuation-separator:url("PA1_template.fld/header.html") fcs;
+	mso-endnote-separator:url("PA1_template.fld/header.html") es;
+	mso-endnote-continuation-separator:url("PA1_template.fld/header.html") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-1287559686;
+	mso-list-template-ids:-1339140018;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:24.0pt;
+	text-indent:-24.0pt;}
+@list l0:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:96.0pt;
+	text-indent:-24.0pt;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:132.0pt;
+	text-indent:-24.0pt;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-24.0pt;}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:204.0pt;
+	text-indent:-24.0pt;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:240.0pt;
+	text-indent:-24.0pt;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:-511743558;
+	mso-list-template-ids:-1069633662;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:24.0pt;
+	text-indent:-24.0pt;}
+@list l1:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l1:level3
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:96.0pt;
+	text-indent:-24.0pt;}
+@list l1:level4
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:132.0pt;
+	text-indent:-24.0pt;}
+@list l1:level5
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-24.0pt;}
+@list l1:level6
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:204.0pt;
+	text-indent:-24.0pt;}
+@list l1:level7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:240.0pt;
+	text-indent:-24.0pt;}
+@list l1:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link="#4F81BD" vlink=purple style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle>Reproducible Research: Peer Assessment 1</p>
+
+<h2><a name=loading-and-preprocessing-the-data></a>Loading and preprocessing
+the data</h2>
+
+<p class=SourceCode><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>fileurl &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+&quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip&quot;</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=ControlFlowTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>if</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> (</span></span><span class=OperatorTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>!</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>file.exists</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;activity.zip&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)) {</span></span><span style='color:
+black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>download.file</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(fileurl, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>destfile
+=</span></span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;activity.zip&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span class=DataTypeTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>method =</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;curl&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>}</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+<br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>file &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+&quot;activity.csv&quot;</span></span><span style='color:black;mso-color-alt:
+windowtext'><br>
+</span><span class=ControlFlowTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>if</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> (</span></span><span class=OperatorTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>!</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>file.exists</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(file)) {</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>unzip</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=DataTypeTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>zipfile =</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;activity.zip&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>}</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>activity_dta &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>read.csv</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(file, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>header =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=OtherTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>TRUE</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>)</span></span></p>
+
+<h2><a name=what-is-mean-total-number-of-steps-taken></a>What is mean total
+number of steps taken per day?</h2>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 1. Calculate the total number of steps taken per day</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>total_steps_per_day &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>tapply</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(activity_dta</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>steps, activity_dta</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>date, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FUN =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> sum, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>na.rm =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=OtherTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>TRUE</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=CommentTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#
+2. Make a histogram of the total number of steps taken each day</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>hist</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(total_steps_per_day, </span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>   
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>main =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Histogram
+of the total number of steps taken each day&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>   
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>xlab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Total
+number of steps taken each day&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>,</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>   
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>col<span style='mso-spacerun:yes'>  </span>=</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;gray&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span></p>
+
+<p class=FirstParagraph><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1028" type="#_x0000_t75" style='width:420pt;
+ height:287pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="PA1_template.fld/image001.png" o:title="" croptop="9594f"/>
+</v:shape><![endif]--><![if !vml]><img width=420 height=287
+src="PA1_template.fld/image006.png" v:shapes="_x0000_i1028"><![endif]></span></p>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 3. Calculate and report the mean and median of the total number
+of steps taken per day</span></span><span style='color:black;mso-color-alt:
+windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>paste</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;Mean total number of steps taken per
+day:&quot;</span></span><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>mean</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(total_steps_per_day, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>na.rm =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=OtherTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>TRUE</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;Mean total number
+of steps taken per day: 9354.22950819672&quot;</span></span></p>
+
+<p class=SourceCode><span class=KeywordTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>paste</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Median
+total number of steps taken per day:&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>median</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(total_steps_per_day, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>na.rm =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=OtherTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>TRUE</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;Median total
+number of steps taken per day: 10395&quot;</span></span></p>
+
+<h2><a name=what-is-the-average-daily-activity-patte></a>What is the average
+daily activity pattern?</h2>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 1. Make a time series plot of the 5-minute interval (x-axis) and
+the average number of steps taken, averaged across all days (y-axis)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+<br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>avg_steps_per_interval &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>tapply</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(activity_dta</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>steps, activity_dta</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>interval, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FUN =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> mean, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>na.rm =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=OtherTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>TRUE</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>plot</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(avg_steps_per_interval, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>type =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;l&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>xlab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Interval&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>ylab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Average
+number of steps&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>,</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>main =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Time
+series plot of average number of steps per interval&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span></p>
+
+<p class=FirstParagraph><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:420pt;height:285pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="PA1_template.fld/image002.png" o:title="" croptop="10011f"/>
+</v:shape><![endif]--><![if !vml]><img width=420 height=285
+src="PA1_template.fld/image007.png" v:shapes="_x0000_i1027"><![endif]></span></p>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 2. Which 5-minute interval, on average across all the days in the
+dataset, contains the maximum number of steps?</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>interval_with_max_steps &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>avg_steps_per_interval[avg_steps_per_interval
+</span></span><span class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>==</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>max</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(avg_steps_per_interval)]</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>paste</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;The 5-minute interval with maximum number
+of steps:&quot;</span></span><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>names</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(interval_with_max_steps))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;The 5-minute
+interval with maximum number of steps: 835&quot;</span></span></p>
+
+<h2><a name=imputing-missing-values></a>Imputing missing values</h2>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 1. Calculate and report the total number of missing values in the
+dataset (i.e. the total number of rows with NAs)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>paste</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;The total number of missing values in the
+dataset:&quot;</span></span><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>sum</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>is.na</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(activity_dta)))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;The total number
+of missing values in the dataset: 2304&quot;</span></span></p>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 2. Devise a strategy for filling in all of the missing values in
+the dataset. The strategy does not need to be sophisticated.</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=CommentTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#
+Using the mean for the corresponding 5-minute interval to fill in all of the
+missing values in the dataset.</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+<br>
+</span><span class=CommentTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#
+3. Create a new dataset that is equal to the original dataset but with the
+missing data filled in.</span></span><span style='color:black;mso-color-alt:
+windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>activity_dta </span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=ControlFlowTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>for</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> (i </span></span><span
+class=ControlFlowTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>in</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=DecValTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>1</span></span><span class=OperatorTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>:</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>nrow</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(imputed_data))
+{</span></span><span style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>  </span></span></span><span
+class=ControlFlowTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>if</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> (</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>is.na</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>steps[i])) {</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>   
+</span>interval =</span></span><span class=StringTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'> </span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>as.character</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(imputed_data[i, </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;interval&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>])</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>   
+</span>imputed_data</span></span><span class=OperatorTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>$</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>steps[i]
+&lt;-</span></span><span class=StringTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>avg_steps_per_interval[interval]</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>  </span>}</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>}</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>paste</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;After imputation, the total number of
+missing values in the dataset:&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>sum</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>is.na</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(imputed_data)))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;After imputation,
+the total number of missing values in the dataset: 0&quot;</span></span></p>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 4. Make a histogram of the total number of steps taken each day
+and Calculate and report the mean and median total number of steps taken per
+day. </span></span><span style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>total_steps_per_day_imp &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>tapply</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>steps, imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>date, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FUN =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> sum)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>hist</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(total_steps_per_day_imp, </span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>main =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Histogram
+of the total number of steps taken each day: Imputed Dataset&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>xlab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Total
+number of steps taken each day&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>,</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>col<span style='mso-spacerun:yes'>  </span>=</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;gray&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span></p>
+
+<p class=FirstParagraph><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:420pt;height:291pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="PA1_template.fld/image003.png" o:title="" croptop="8760f"/>
+</v:shape><![endif]--><![if !vml]><img width=420 height=291
+src="PA1_template.fld/image008.png" v:shapes="_x0000_i1026"><![endif]></span></p>
+
+<p class=SourceCode><span class=KeywordTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>paste</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Mean
+total number of steps taken per day:&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>mean</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(total_steps_per_day_imp))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;Mean total number
+of steps taken per day: 10766.1886792453&quot;</span></span></p>
+
+<p class=SourceCode><span class=KeywordTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>paste</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Median
+total number of steps taken per day:&quot;</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>median</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(total_steps_per_day_imp))</span></span></p>
+
+<p class=SourceCode><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>## [1] &quot;Median total
+number of steps taken per day: 10766.1886792453&quot;</span></span></p>
+
+<p class=FirstParagraph>Do these values differ from the estimates from the
+first part of the assignment? What is the impact of imputing missing data on
+the estimates of the total daily number of steps?</p>
+
+<p class=MsoBodyText>The mean of total number of steps per day does differ the
+from the estimate from the first part. The median of total number of steps has
+also changed. Imputing the missing values has increased the total daily number
+of steps, thereby affecting (increasing) the frequencies of some bins, as can
+be seen from the histogram.</p>
+
+<h2><a name=are-there-differences-in-activity-patter></a>Are there differences
+in activity patterns between weekdays and weekends?</h2>
+
+<p class=SourceCode><span class=CommentTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'># 1. Create a new factor variable in the dataset with two levels –
+“weekday” and “weekend” indicating whether a given date is a weekday or weekend
+day.</span></span><span style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>day &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>weekdays</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>as.Date</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>date, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>format =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;%Y-%m-%d&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>))</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>daytype &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>factor</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=KeywordTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>ifelse</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>(imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>day </span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>==</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+&quot;Saturday&quot;</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>|</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>day </span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>==</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+&quot;Sunday&quot;</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;weekend&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;weekday&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>), </span></span><span class=DataTypeTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>levels =</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>c</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;weekday&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;weekend&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>))</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+<br>
+</span><span class=CommentTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#
+2. Make a panel plot containing a time series plot of the 5-minute interval
+(x-axis) and the average number of steps taken, averaged across all weekday
+days or weekend days (y-axis).</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data_weekday &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data[imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>daytype </span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>==</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+&quot;weekday&quot;</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, ]</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data_weekend &lt;-</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>imputed_data[imputed_data</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>daytype </span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>==</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+&quot;weekend&quot;</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, ]</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+<br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>avg_steps_per_day_imp_weekday =</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>tapply</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(imputed_data_weekday</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>steps, imputed_data_weekday</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>interval, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FUN =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> mean)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>avg_steps_per_day_imp_weekend =</span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>tapply</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(imputed_data_weekend</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>steps, imputed_data_weekend</span></span><span
+class=OperatorTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>$</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>interval, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FUN =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> mean)</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+<br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>par</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=DataTypeTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>mfrow =</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>c</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=DecValTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>2</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=DecValTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>1</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>), </span></span><span class=DataTypeTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>mar =</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>c</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(</span></span><span class=DecValTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>5</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=DecValTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>4</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span class=DecValTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>2</span></span><span class=NormalTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'>, </span></span><span
+class=DecValTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>1</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>))</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+<br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>plot</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(avg_steps_per_day_imp_weekend, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>type =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;l&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>xlab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Interval&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>ylab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Number
+of steps&quot;</span></span><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>,</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>main =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Weekend&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+<br>
+</span><span class=KeywordTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>plot</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>(avg_steps_per_day_imp_weekday, </span></span><span
+class=DataTypeTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>type =</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'> </span></span><span class=StringTok><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;l&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>xlab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Interval&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>, </span></span><span style='color:black;
+mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>ylab =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Number
+of steps&quot;</span></span><span class=NormalTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi;color:black;mso-color-alt:windowtext'>,</span></span><span
+style='color:black;mso-color-alt:windowtext'><br>
+</span><span class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span></span></span><span class=DataTypeTok><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>main =</span></span><span class=NormalTok><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:black;mso-color-alt:windowtext'> </span></span><span
+class=StringTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;Weekday&quot;</span></span><span
+class=NormalTok><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+color:black;mso-color-alt:windowtext'>)</span></span></p>
+
+<p class=FirstParagraph><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:420pt;
+ height:336pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="PA1_template.fld/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=420 height=336
+src="PA1_template.fld/image004.png" v:shapes="Picture"><![endif]></span></p>
+
+</div>
+
+</body>
+
+</html>
